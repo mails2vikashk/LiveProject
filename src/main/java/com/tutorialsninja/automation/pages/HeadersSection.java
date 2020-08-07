@@ -26,4 +26,12 @@ public class HeadersSection
 	
 	@FindBy(linkText= "Login")
 	public static WebElement loginLink;
+	
+	@FindBy(xpath  = "//input[@placeholder='Search']")
+	public static WebElement searchBoxField;
+	
+	@FindBy(xpath  = "//i[@class='fa fa-search']")
+	public static WebElement searchButton;
+	
+	
 }
