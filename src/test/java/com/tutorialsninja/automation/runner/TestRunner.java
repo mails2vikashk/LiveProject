@@ -26,7 +26,7 @@ plugin={"html:target/cucumber_html_report"})
 //tags={"@Register"}) //running all the scenario in a single row for register page.
 //tags={"@Register","@Four"}) running only fourth scenario
 
-public class Runner 
+public class TestRunner 
 {
 	
 }
