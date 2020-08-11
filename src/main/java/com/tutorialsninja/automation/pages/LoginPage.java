@@ -17,6 +17,8 @@ public class LoginPage
     public static WebElement emailField;
 	
 	
+	
+	
 	@FindBy(id = "input-password")
 	public static WebElement passWord;
 	
@@ -53,6 +55,12 @@ public class LoginPage
 		Elements.TypeText(LoginPage.emailField, email);
 		Elements.click(LoginPage.continueButton);
 		
+	}
+	public static void  login()
+	{
+		Elements.TypeText(emailField, Base.reader.getUserName());
+		Elements.TypeText(passWord, Base.reader.getPassword());
+		Elements.click(signInButton);
 	}
 }
 
